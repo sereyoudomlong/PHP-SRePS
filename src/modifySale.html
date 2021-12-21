@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>PHP SRePS Sales Management System</title>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="render.js"></script>
+    <script defer src="modifySale.js"></script>
+
+  </head>
+  <header>
+    <h1>PHP SRePS Sales Management System</h1> 
+    <a href="./index.html"><button class="button">Main Menu</button></a>
+  </header>
+  <body>
+    <center>
+      <div class="mainDiv">
+        <div id="popup" style="opacity: 0; display: none">
+          <h1 id="popupTitle"></h1>
+          <p id="popupText"></p>
+        </div> 
+        <div id="saleInvalid" style="display: none">
+          <h1>Sorry</h1>
+          <p>Something happened while getting the sale to edit..</p>
+          <a href="./salesManager.html" class="bigMenuButton">Back</a> 
+        </div>
+        <div id="saleValid" style="display: none">
+            <h1>Modifying Sale</h1>
+
+            <h2>Cart</h2>
+            <table style="width:100%" id="cart" border="1px">
+            </table> 
+    
+            <h2>Items in Cart: <span id="itemsInCart"></span></h2>
+            <h2>Total Price: <span id="totalPrice"></span></h2>
+            <button onclick="saveSale()">Save</button>
+            <button onclick="window.location.href = './salesManager.html'">Back</button>
+        </div>
+      </div>
+    </center>
+  </body>
+</html>

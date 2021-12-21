@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>PHP SRePS Sales Management System</title>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="render.js"></script>
+    <script defer src="salesManager.js"></script>
+  </head>
+  <header>
+    <h1>PHP SRePS Sales Management System</h1>
+    <a href="./index.html"><button class="button">Main Menu</button></a>
+  </header>
+  <body>
+    <div class="mainDiv">
+      <h1>Display Sales</h1>
+      <div id="popup" style="opacity: 0; display: none">
+        <h1 id="popupTitle"></h1>
+        <p id="popupText"></p>
+      </div> 
+
+      <label for="weekly_sales">Weekly Sales:</label>
+        <label for="dateFrom">From:</label>
+        <input type="week" id="dateWeekly"></input> 
+      <table style="width:100%" id="weeklyTable" border="1px">
+        <tr><th>Date</th><th>Item Count</th><th>Employee</th><th>Customer</th><th>Price</th><th></th><th></th></tr>
+      </table><br><br>
+
+      <label for="monthly_sales">Monthly Sales:</label>
+        <input type="month" id="datemonth">
+      <table style="width:100%" id="monthlyTable" border="1px">
+        <tr><th>Date</th><th>Item Count</th><th>Employee</th><th>Customer</th><th>Price</th><th></th><th></th></tr>
+      </table> 
+    </div>
+  </body>
+</html>

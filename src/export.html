@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>PHP SRePS Sales Management System</title>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="render.js"></script>
+    <script defer src="export.js"></script>
+  </head>
+  <header>
+    <h1>PHP SRePS Sales Management System</h1>
+    <a href="./index.html"><button class="button">Main Menu</button></a>
+  </header>
+  <body>
+    <center>
+      <div class="mainDiv">
+        <div id="popup" style="opacity: 0; display: none">
+          <h1 id="popupTitle"></h1>
+          <p id="popupText"></p>
+        </div>
+        <h1>Export</h1> 
+        <label for="type">Type of Export</label>
+        <select name="type" id="type">
+            <option value="stock">Stock</option>
+            <option value="sales">Sales</option>
+        </select>
+        <button class="SmallerButton" onclick="exportData()">Export</button>
+      </div>
+    </center>
+  </body>
+</html>

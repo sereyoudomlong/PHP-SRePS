@@ -1,0 +1,9 @@
+{"name":"coke","description":"a coke","price":3,"currentStock":29,"_id":"0MBAKtsvWA6RCxiJ"}
+{"name":"apple","description":"a apple","price":2,"currentStock":89,"_id":"5o6876UtgIkWkuiI"}
+{"name":"facial cream","description":"a facial cream","price":3,"currentStock":66,"_id":"6tubd4gzK8eUTERA"}
+{"name":"banana","description":"a banana","price":2,"currentStock":22,"_id":"7W9vy5G2z1yfR3cX"}
+{"name":"bread","description":"a bread","price":2,"currentStock":33,"_id":"I85AJpEaZZFMe53D"}
+{"name":"water","description":"a water","price":1,"currentStock":54,"_id":"L5bZKnsdXN3s7l3E"}
+{"name":"lip stick","description":"a lip stick","price":10,"currentStock":81,"_id":"aZPsD52jFt2nOAef"}
+{"name":"soup","description":"a soup","price":2,"currentStock":84,"_id":"cQ8UvxXwk6KHyU5I"}
+{"name":"fanta","description":"a fanta","price":3,"currentStock":44,"_id":"oAmu2aLgbzVnSzS4"}

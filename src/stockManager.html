@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>PHP SRePS Sales Management System</title>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="render.js"></script>
+    <script defer src="stockManager.js"></script>
+    </head>
+  </head>
+  <header>
+    <h1>PHP SRePS Sales Management System</h1> 
+    <a href="./index.html"><button class="button">Main Menu</button></a>
+  </header>
+  <body>
+    <center>
+      <div class="mainDiv">
+        <div id="popup" style="opacity: 0; display: none">
+          <h1 id="popupTitle"></h1>
+          <p id="popupText"></p>
+        </div>
+    
+        <!--Stock items table-->
+        <div id="stockLevels">
+            <button class="AddButton" onclick="showEditItem()">Add Stock</button>
+            <button class="AddButton" onclick="showSaleAnalysis()">Sale Analysis</button>
+            <h1>Current stock levels</h1>
+            <table style="width:100%" id="stockTable" border="1px">
+                <tr>
+                    <th id="name"></th>
+                    <th id="desc"></th>
+                    <th id="price"></th>
+                    <th id="stock"></th>
+                    <th id="edit"></th>
+                    <th id="delete"></th>
+                </tr>
+            </table> 
+        
+            <!-- If an item is out of stock list it here -->
+            <h1>Items in need of restock</h1>
+            <table style="width:100%" id="stockTableNeedRestock" border="1px">
+                <tr>
+                  <th id="rName">Name</th>
+                  <th id="rDesc">Description</th>
+                  <th id="rPrice">Price</th>
+                  <th id="rStock">Stock</th>
+                  <th id="rStock"></th>
+                  <th id="rStock"></th>
+                </tr>
+            </table>
+          </body>
+        </div>
+        <!--Add/Edit form-->
+        <div id="editStock" style="display: none">
+            <h1>Add/Edit Stock</h1>
+            <label for="itemName">Name</label></br>
+            <input type="text" id="itemName" name="itemName"></br>
+            <label for="itemDescription">Description</label></br>
+            <input type="text" id="itemDescription" name="itemDescription"></br>
+            <label for="itemPrice">Price</label></br>
+            <input type="number" id="itemPrice" name="itemPrice"></br>
+            <label for="itemStock">Stock</label></br>
+            <input type="number" id="itemStock" name="itemStock"></br>
+            <button class="Simple" id="editadd" onclick="addItem()">Add</button>
+            <button type="submit" onclick="showStockLevels()">Back</button>
+            <input type="hidden" id="id"></input>
+        </div>
+        <!--Sale Analysis-->
+        <div id="saleAnalysis" style="display: none">
+          <h1>Sale Analysis</h1>
+          <p><b>Total Revenue:  </b>$<span id="totalrevenue"></span></p>
+          <p><b>Best Selling Item:  </b><span id="bestItem"></span></p>
+          <table style="width:100%" id="saleAnalysisTable" border="1px">
+            <tr>
+              <th id="sName">Name</th>
+              <th id="sDesc">Description</th>
+              <th id="sPrice">Revenue</th>
+              <th id="sStock">Sold</th>
+            </tr>
+          </table>
+          <button type="submit" onclick="showStockLevels()">Back</button>
+        </div>
+      </div>
+    </center>
+  </body>
+</html>

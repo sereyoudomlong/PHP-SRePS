@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>PHP SRePS Sales Management System</title>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="render.js"></script>
+    <script defer src="addSale.js"></script>
+
+  </head>
+  <header>
+    <h1>PHP SRePS Sales Management System</h1> 
+    <a href="./index.html"><button class="button">Main Menu</button></a>
+  </header>
+  <body>
+    <center>
+      <div class="mainDiv">
+        <div id="popup" style="opacity: 0; display: none">
+          <h1 id="popupTitle"></h1>
+          <p id="popupText"></p>
+        </div> 
+        <div id="addSaleNoItems" style="display: none">
+          <h1>Sorry</h1>
+          <p>There isn't any stock in the system, we cannot start a sale with no stock!</p>
+          <a href="./stockManager.html" class="bigMenuButton">Stock Manager</a> 
+        </div>
+        <div id="addSale" style="display: none">
+          <h1>Add Sale</h1>
+          <label for="items">Item</label>
+          <select name="items" id="items">
+          </select>
+          <label for="amountItems">Amount</label>
+          <input type="number" id="amountItems" name="amountItems" placeholder="1"></input>
+          <button onclick="addItemToCart()">  Add Item</button>
+    
+          <h1>Items in this sale <span id="print"> </span></h1>
+          <table style="width:100%" id="stockTable" border="1px">
+              <tr><th>Name</th><th>Description</th><th>Price</th><th>Amount</th><th></th></tr>
+          </table> 
+    
+          <h1>Items in Cart: <span id="countcart">0</span></h1>
+          <h1>Total Price: <span id="totalprice">$0</span></h1>
+          <button onclick="addSale()">Add Sale</button>
+        </div>
+      </div>
+    </center>
+  </body>
+</html>
