@@ -57,4 +57,4 @@ Records the customer information
 
 ## Screenshots
 ### Main Menu
-![image](/screenshot/mainmenu.png?raw=true)
+![Alt text](screenshots/mainmenu.png?raw=true "Title")
