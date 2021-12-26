@@ -57,4 +57,13 @@ Records the customer information
 
 ## Screenshots
 ### Main Menu
-![Alt text](screenshots/mainmenu.PNG?raw=true "Title")
+![Alt text](screenshots/mainmenu.PNG?raw=true "MainMenu")
+
+### Add Sale
+![Alt text](screenshots/add_sale.PNG?raw=true "Add Sale")
+
+### Display Sales
+![Alt text](screenshots/display_sales.PNG?raw=true "Display Sales")
+
+### Manage Stock
+![Alt text](screenshots/manage_stock.PNG?raw=true "Manage Stock")
