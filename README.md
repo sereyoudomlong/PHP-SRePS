@@ -54,3 +54,7 @@ Records the customer information
 | _id | The unique id of the customer | String |
 | firstName | The first name of the customer | String |
 | lastName | The last name of the customer | String |
+
+## Screenshots
+### Main Menu
+![Alt text](/screenshot/mainmenu.png?raw=true)
